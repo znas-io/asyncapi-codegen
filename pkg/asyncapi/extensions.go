@@ -11,6 +11,8 @@ type Extensions struct {
 	// Setting custom Go type when generating schemas
 	ExtGoType string `json:"x-go-type"`
 
+	ExtJSONName string `json:"x-json-name"`
+
 	// Setting custom import statements for ExtGoType
 	ExtGoTypeImport *GoTypeImportExtension `json:"x-go-type-import"`
 }

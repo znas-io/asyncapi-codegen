@@ -36,6 +36,7 @@ func templateFunctions() template.FuncMap {
 	return template.FuncMap{
 		"namifyWithoutParam":             templates.NamifyWithoutParams,
 		"namify":                         templates.Namify,
+		"jsonName":                       templates.JSONName,
 		"snakeCase":                      templates.SnakeCase,
 		"referenceToStructAttributePath": templates.ReferenceToStructAttributePath,
 		"referenceToTypeName":            templates.ReferenceToTypeName,
