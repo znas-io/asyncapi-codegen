@@ -55,6 +55,14 @@ var (
 	matchAllCap   = regexp.MustCompile("([a-z0-9])([A-Z])")
 )
 
+func JSONName(jsonName string, sentence string) string {
+	if jsonName != "" {
+		return SnakeCase(sentence)
+	}
+
+	return strings.ToLower(jsonName)
+}
+
 // SnakeCase will convert a sentence to snake case.
 func SnakeCase(sentence string) string {
 	snake := matchFirstCap.ReplaceAllString(sentence, "${1}_${2}")
