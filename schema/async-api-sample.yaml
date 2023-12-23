@@ -1,0 +1,97 @@
+asyncapi: 2.6.0
+
+info:
+  title: svc-ccs-rtc-bridge
+  version: '0.0.1'
+  description: |-
+    Exposes a real-time communication API for apps to interact with CyraCom's underlying audio/video infrastructure. It specializes in protocol translation and efficient message handling.
+
+servers:
+  dev:
+    url: wss://rtc-bridge-dev.example.com
+    protocol: wss
+    description: Development server
+
+  qa:
+    url: wss://rtc-bridge-qa.example.com
+    protocol: wss
+    description: QA server
+
+  staging:
+    url: wss://rtc-bridge-staging.example.com
+    protocol: wss
+    description: Staging server
+
+  production:
+    url: wss://rtc-bridge.example.com
+    protocol: wss
+    description: Production server
+
+components:
+  messages:
+    Ok:
+      payload:
+        type: object
+        properties:
+          message:
+            type: string
+            description: General Message
+  schemas:
+    Action:
+      type: object
+      properties:
+        action:
+          type: string
+    User:
+      allOf:
+        - $ref: '#/components/schemas/Action'
+        - type: object
+          properties:
+            additionalProperty:
+              type: string
+    Person:
+      allOf:
+        - $ref: '#/components/schemas/Action'
+        - type: object
+          properties:
+            additionalProperty:
+              type: string
+    Registration:
+      type: object
+      properties:
+        callId:
+          type: string
+
+
+channels:
+  /disconnect:
+    publish:
+      summary: Client request for current websocket disconnection
+      operationId: disconnect
+    subscribe:
+      summary: Application disconnect confirmation
+      operationId: disconnectResponse
+      message:
+        $ref: '#/components/messages/Ok'
+
+  /foo:
+    publish:
+      summary: Fire and forget operation
+      operationId: foo
+      message:
+        name: FooRequest
+        payload:
+          type: object
+          properties:
+            name:
+              type: string
+              description: Name of the person.
+            age:
+              type: integer
+              minimum: 0
+              maximum: 120
+              description: Age of the person.
+            female:
+              type: boolean
+              description: Indicates if the person is female.
+          additionalProperties: false
