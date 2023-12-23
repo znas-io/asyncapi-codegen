@@ -3,8 +3,8 @@ package templates
 import (
 	"testing"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/asyncapi"
 	"github.com/stretchr/testify/suite"
+	"github.com/znas-io/asyncapi-codegen/pkg/asyncapi"
 )
 
 func TestHelpersSuite(t *testing.T) {

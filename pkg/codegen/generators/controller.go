@@ -3,7 +3,7 @@ package generators
 import (
 	"bytes"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/asyncapi"
+	"github.com/znas-io/asyncapi-codegen/pkg/asyncapi"
 )
 
 // ControllerGenerator is a code generator for controllers that will turn an

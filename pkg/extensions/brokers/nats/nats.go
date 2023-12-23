@@ -3,9 +3,9 @@ package nats
 import (
 	"context"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions"
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions/brokers"
 	"github.com/nats-io/nats.go"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions/brokers"
 )
 
 // Check that it still fills the interface.

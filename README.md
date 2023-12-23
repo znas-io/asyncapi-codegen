@@ -51,20 +51,20 @@ In order to use this library in your code, please execute the following lines:
 
 ```shell
 # Install the tool
-go install github.com/lerenn/asyncapi-codegen/cmd/asyncapi-codegen@latest
+go install github.com/znas-io/asyncapi-codegen/cmd/asyncapi-codegen@latest
 
 # Generate the code from the asyncapi file
 asyncapi-codegen -i ./asyncapi.yaml -p <your-package> -o ./asyncapi.gen.go
 
 # Install dependencies needed by the generated code
-go get -u github.com/lerenn/asyncapi-codegen/pkg/extensions
+go get -u github.com/znas-io/asyncapi-codegen/pkg/extensions
 ```
 
 You can also specify the generation part by adding a `go generate` instruction
 at the beginning of your file:
 
 ```golang
-//go:generate go run github.com/lerenn/asyncapi-codegen/cmd/asyncapi-codegen@<version> -i ./asyncapi.yaml -p <your-package> -o ./asyncapi.gen.go
+//go:generate go run github.com/znas-io/asyncapi-codegen/cmd/asyncapi-codegen@<version> -i ./asyncapi.yaml -p <your-package> -o ./asyncapi.gen.go
 ```
 
 ## Concepts
@@ -116,7 +116,7 @@ In order to recreate the code for user and application, you have to run this com
 
 ```shell
 # Install the tool
-go install github.com/lerenn/asyncapi-codegen/cmd/asyncapi-codegen@latest
+go install github.com/znas-io/asyncapi-codegen/cmd/asyncapi-codegen@latest
 
 # Generate the code from the asyncapi file
 asyncapi-codegen -i examples/helloworld/asyncapi.yaml -p main -o ./helloworld.gen.go
@@ -182,7 +182,7 @@ code with NATS (you can also find it [here](./examples/helloworld/nats/app/main.
 
 ```go
 import(
-  "github.com/lerenn/asyncapi-codegen/pkg/extensions/brokers/nats"
+  "github.com/znas-io/asyncapi-codegen/pkg/extensions/brokers/nats"
   // ...
 )
 
@@ -237,7 +237,7 @@ code with NATS (you can also find it [here](./examples/helloworld/nats/app/main.
 
 ```go
 import(
-  "github.com/lerenn/asyncapi-codegen/pkg/extensions/brokers/nats"
+  "github.com/znas-io/asyncapi-codegen/pkg/extensions/brokers/nats"
   // ...
 )
 
@@ -287,7 +287,7 @@ In order to recreate the code for user and application, you have to run this com
 
 ```shell
 # Install the tool
-go install github.com/lerenn/asyncapi-codegen/cmd/asyncapi-codegen@latest
+go install github.com/znas-io/asyncapi-codegen/cmd/asyncapi-codegen@latest
 
 # Generate the code from the asyncapi file
 asyncapi-codegen -i examples/ping/asyncapi.yaml -p main -o ./ping.gen.go
@@ -405,7 +405,7 @@ provide a controller to it. Here is the interface that you need to satisfy:
 
 ```go
 import(
-  "github.com/lerenn/asyncapi-codegen/pkg/extensions"
+  "github.com/znas-io/asyncapi-codegen/pkg/extensions"
 )
 
 type BrokerController interface {
@@ -468,7 +468,7 @@ middlewares, and finally to the generated code (and subscription callback).
 
 ```golang
 import(
-  "github.com/lerenn/asyncapi-codegen/pkg/extensions"
+  "github.com/znas-io/asyncapi-codegen/pkg/extensions"
   // ...
 )
 
@@ -488,7 +488,7 @@ You can even discriminate on more specification. Please see the [Context section
 
 ```golang
 import(
-  "github.com/lerenn/asyncapi-codegen/pkg/extensions"
+  "github.com/znas-io/asyncapi-codegen/pkg/extensions"
   // ...
 )
 
@@ -502,7 +502,7 @@ func myMiddleware(_ context.Context, msg *extensions.BrokerMessage, _ middleware
 
 ```golang
 import(
-  "github.com/lerenn/asyncapi-codegen/pkg/extensions"
+  "github.com/znas-io/asyncapi-codegen/pkg/extensions"
   // ...
 )
 
@@ -525,7 +525,7 @@ Here is an example:
 
 ```golang
 import(
-  "github.com/lerenn/asyncapi-codegen/pkg/extensions"
+  "github.com/znas-io/asyncapi-codegen/pkg/extensions"
   // ...
 )
 
@@ -550,7 +550,7 @@ When receiving the context from generated code (either in subscription,
 middleware, logging, etc), you can get some information embedded in context.
 
 To get these information, please use the functions from
-`github.com/lerenn/asyncapi-codegen/pkg/extensions`:
+`github.com/znas-io/asyncapi-codegen/pkg/extensions`:
 
 ```golang
 // Execute this middleware only if this is from "ping" channel
@@ -574,7 +574,7 @@ to initialize the controller with a logger, with the function `WithLogger()`:
 
 ```golang
 import(
-  "github.com/lerenn/asyncapi-codegen/pkg/extensions/brokers"
+  "github.com/znas-io/asyncapi-codegen/pkg/extensions/brokers"
   // ...
 )
 
@@ -595,7 +595,7 @@ in order to execute it on every published and received messages:
 
 ```golang
 import(
-  "github.com/lerenn/asyncapi-codegen/pkg/extensions/brokers"
+  "github.com/znas-io/asyncapi-codegen/pkg/extensions/brokers"
   // ...
 )
 
@@ -664,8 +664,8 @@ AsyncAPI specifications, you can use the `versioning` package:
 ```golang
 
 import (
-  "github.com/lerenn/asyncapi-codegen/pkg/extensions/brokers/nats"
-  "github.com/lerenn/asyncapi-codegen/pkg/extensions/versioning"
+  "github.com/znas-io/asyncapi-codegen/pkg/extensions/brokers/nats"
+  "github.com/znas-io/asyncapi-codegen/pkg/extensions/versioning"
   v1 "path/to/asyncapi/spec/version/1"
   v2 "path/to/asyncapi/spec/version/2"
 )

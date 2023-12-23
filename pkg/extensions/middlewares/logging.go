@@ -3,7 +3,7 @@ package middlewares
 import (
 	"context"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions"
 )
 
 // Logging is a middleware that logs messages in reception and in publication.

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/asyncapi"
+	"github.com/znas-io/asyncapi-codegen/pkg/asyncapi"
 )
 
 // NamifyWithoutParams will convert a sentence to a golang conventional type name.

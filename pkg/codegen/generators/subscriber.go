@@ -3,7 +3,7 @@ package generators
 import (
 	"bytes"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/asyncapi"
+	"github.com/znas-io/asyncapi-codegen/pkg/asyncapi"
 )
 
 // SubscriberGenerator is a code generator for subscribers that will turn an

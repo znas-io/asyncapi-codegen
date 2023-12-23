@@ -3,8 +3,8 @@ package asyncapi
 import (
 	"testing"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/utils"
 	"github.com/stretchr/testify/suite"
+	"github.com/znas-io/asyncapi-codegen/pkg/utils"
 )
 
 func TestMessageSuite(t *testing.T) {

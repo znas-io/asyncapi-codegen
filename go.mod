@@ -1,4 +1,4 @@
-module github.com/lerenn/asyncapi-codegen
+module github.com/znas-io/asyncapi-codegen
 
 go 1.21
 

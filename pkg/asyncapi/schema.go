@@ -1,7 +1,7 @@
 package asyncapi
 
 import (
-	"github.com/lerenn/asyncapi-codegen/pkg/utils"
+	"github.com/znas-io/asyncapi-codegen/pkg/utils"
 )
 
 // Schema is a representation of the corresponding asyncapi object filled

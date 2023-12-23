@@ -6,7 +6,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions/brokers/nats"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions/brokers/nats"
 )
 
 func main() {

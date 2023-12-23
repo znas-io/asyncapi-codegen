@@ -7,9 +7,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions"
-	asyncapi_test "github.com/lerenn/asyncapi-codegen/test"
 	"github.com/stretchr/testify/suite"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions"
+	asyncapi_test "github.com/znas-io/asyncapi-codegen/test"
 )
 
 func TestSuite(t *testing.T) {

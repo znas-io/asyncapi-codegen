@@ -6,7 +6,7 @@ import (
 
 func sourceAsWorkdir(client *dagger.Client) func(r *dagger.Container) *dagger.Container {
 	// Set path where the source code is mounted.
-	containerDir := "/go/src/github.com/lerenn/asyncapi-codegen"
+	containerDir := "/go/src/github.com/znas-io/asyncapi-codegen"
 
 	return func(r *dagger.Container) *dagger.Container {
 		return r.

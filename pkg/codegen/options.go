@@ -1,7 +1,7 @@
 package codegen
 
 import (
-	"github.com/lerenn/asyncapi-codegen/pkg/codegen/generators"
+	"github.com/znas-io/asyncapi-codegen/pkg/codegen/generators"
 )
 
 // Options is the struct that gather configuration of codegen.

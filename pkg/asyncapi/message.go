@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/utils"
 	"github.com/mohae/deepcopy"
+	"github.com/znas-io/asyncapi-codegen/pkg/utils"
 )
 
 // MessageField is a structure that represents the type of a field.

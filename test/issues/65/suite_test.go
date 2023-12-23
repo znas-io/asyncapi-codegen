@@ -4,9 +4,9 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/asyncapi"
-	"github.com/lerenn/asyncapi-codegen/pkg/codegen/generators"
 	"github.com/stretchr/testify/suite"
+	"github.com/znas-io/asyncapi-codegen/pkg/asyncapi"
+	"github.com/znas-io/asyncapi-codegen/pkg/codegen/generators"
 )
 
 func TestSuite(t *testing.T) {

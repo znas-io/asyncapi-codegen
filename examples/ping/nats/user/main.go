@@ -5,9 +5,9 @@ package main
 import (
 	"context"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions/brokers/nats"
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions/loggers"
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions/middlewares"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions/brokers/nats"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions/loggers"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions/middlewares"
 )
 
 func main() {

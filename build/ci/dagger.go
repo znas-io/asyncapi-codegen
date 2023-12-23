@@ -9,9 +9,9 @@ import (
 	"sync"
 
 	"dagger.io/dagger"
-	"github.com/lerenn/asyncapi-codegen/pkg/pipeline"
-	"github.com/lerenn/asyncapi-codegen/pkg/utils"
 	"github.com/spf13/cobra"
+	"github.com/znas-io/asyncapi-codegen/pkg/pipeline"
+	"github.com/znas-io/asyncapi-codegen/pkg/utils"
 )
 
 var (

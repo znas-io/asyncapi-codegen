@@ -3,7 +3,7 @@ package codegen
 import (
 	"fmt"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions"
 )
 
 var (

@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions"
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions/brokers/kafka"
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions/brokers/nats"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions/brokers/kafka"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions/brokers/nats"
 )
 
 // BrokerControllers returns a list of BrokerController to test based on the

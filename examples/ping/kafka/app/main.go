@@ -6,10 +6,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/lerenn/asyncapi-codegen/examples"
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions/brokers/kafka"
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions/loggers"
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions/middlewares"
+	"github.com/znas-io/asyncapi-codegen/examples"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions/brokers/kafka"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions/loggers"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions/middlewares"
 )
 
 type Subscriber struct {

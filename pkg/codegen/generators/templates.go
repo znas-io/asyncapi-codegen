@@ -5,7 +5,7 @@ import (
 	"path"
 	"text/template"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/codegen/generators/templates"
+	"github.com/znas-io/asyncapi-codegen/pkg/codegen/generators/templates"
 )
 
 const (

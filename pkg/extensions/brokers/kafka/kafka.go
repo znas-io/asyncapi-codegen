@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions"
-	"github.com/lerenn/asyncapi-codegen/pkg/extensions/brokers"
 	"github.com/segmentio/kafka-go"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions"
+	"github.com/znas-io/asyncapi-codegen/pkg/extensions/brokers"
 )
 
 // Check that it still fills the interface.

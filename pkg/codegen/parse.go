@@ -9,7 +9,7 @@ import (
 
 	"github.com/asyncapi/parser-go/pkg/parser"
 	"github.com/ghodss/yaml"
-	"github.com/lerenn/asyncapi-codegen/pkg/asyncapi"
+	"github.com/znas-io/asyncapi-codegen/pkg/asyncapi"
 )
 
 // FromFile parses the AsyncAPI specification either from a YAML file or a JSON file.

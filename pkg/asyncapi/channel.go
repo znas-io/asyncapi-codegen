@@ -3,7 +3,7 @@ package asyncapi
 import (
 	"strings"
 
-	"github.com/lerenn/asyncapi-codegen/pkg/utils"
+	"github.com/znas-io/asyncapi-codegen/pkg/utils"
 )
 
 // Channel is a representation of the corresponding asyncapi object filled
