@@ -55,12 +55,12 @@ var (
 	matchAllCap   = regexp.MustCompile("([a-z0-9])([A-Z])")
 )
 
-func JSONName(jsonName string, sentence string) string {
-	if jsonName != "" {
-		return SnakeCase(sentence)
+func CustomTag(customTag string, sentence string) string {
+	if customTag == "" {
+		return fmt.Sprintf(`json:"%v"`, SnakeCase(sentence))
 	}
 
-	return strings.ToLower(jsonName)
+	return customTag
 }
 
 // SnakeCase will convert a sentence to snake case.

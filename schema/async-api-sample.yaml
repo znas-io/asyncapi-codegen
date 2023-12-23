@@ -31,17 +31,15 @@ components:
   messages:
     Ok:
       payload:
-        type: object
-        properties:
-          message:
-            type: string
-            description: General Message
+        $ref: '#/components/schemas/Action'
+
   schemas:
     Action:
       type: object
       properties:
         action:
           type: string
+          x-custom-tag: 'json:"actionBoy"'
     User:
       allOf:
         - $ref: '#/components/schemas/Action'
@@ -68,6 +66,8 @@ channels:
     publish:
       summary: Client request for current websocket disconnection
       operationId: disconnect
+      message:
+        $ref: '#/components/messages/Ok'
     subscribe:
       summary: Application disconnect confirmation
       operationId: disconnectResponse
